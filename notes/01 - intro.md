@@ -77,7 +77,7 @@ Variables  store values between assignments.
 > Beware! Not all `Reg`s are defined as registers. The synthesizer decides how to treat the variable.
 
 
-Logic values:  0, 1, x (undefined), z (tr-state, high-impedance)
+Logic values:  0, 1, x (undefined), z (tri-state, high-impedance)
 
 ### Verilog styles
 Structural and behaviorial.
@@ -103,7 +103,7 @@ endmodule
 
 ## Examples
 
-The examples are implemented and "compiled" in Quartus using [5CEBA4F23C7](https://www.datasheets360.com/part/detail/5ceba4f23c7/347142369474300566/) during this course. To compile the design several steps are executed:
+The examples are implemented and "compiled" in Quartus using [5CEBA4F23C7](https://www.datasheets360.com/part/detail/5ceba4f23c7/347142369474300566/) during this course. To compile the design the steps below are followed:
 
 1. Analysis & Synthesis
    -  RTL viewer here shows a shematic of the circuit.
@@ -120,11 +120,11 @@ The examples are implemented and "compiled" in Quartus using [5CEBA4F23C7](https
 
 | ![AND Gate Chip Planner Closer View](assets/d01/chip_planner_zoomed_ex1.png) |
 | :--------------------------------------------------------------------------: |
-|                   <b>Chip Planner Closer View</b>                   |
+|                       <b>Chip Planner Closer View</b>                        |
 
 | ![AND Gate Chip Planner View](assets/d01/chip_planner.png) |
-| :---------------------------------------------------: |
-|                   <b>Chip Planner View</b>                   |
+| :--------------------------------------------------------: |
+|                  <b>Chip Planner View</b>                  |
 
 ```verilog
 module example_and(A, B, C, Z);
