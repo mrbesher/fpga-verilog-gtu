@@ -213,7 +213,7 @@ endmodule
 ```verilog
 module example_named(input [9:0] in,
                     output [9:0] out);
-    name name_instance(.a in[0], .b in[1], .c out[0]);
+    name name_instance(.a(in[0]), .b(in[1]), .c(out[0]));
 endmodule
 
 module name(input a, b, output c);
