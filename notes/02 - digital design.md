@@ -106,7 +106,7 @@ endmodule
 
 ## Multiplexer
 ```verilog
-module mux(output [4:0] R, input [4:0] A, B, input selection);
+module mux(output [3:0] R, input [3:0] A, B, input selection);
 	mux_2x1_1bit mx0(R[0], A[0], B[0], selection),
 					mx1(R[1], A[1], B[1], selection),
 					mx2(R[2], A[2], B[2], selection),
@@ -129,7 +129,11 @@ endmodule
 | :----------------------------------------: |
 |             <b>RTL Viewer</b>              |
 
-`SW` represents an array of switches and `LED` represents an array of LEDs that we used as I/O on the board after configuring the pins of the FPGA.
+`SW` represents an array of switches and `LED` represents an array of LEDs that we used as I/O on the board after configuring the pins of the FPGA. `SW[9:8]` are used for functionality selection as follows:
+- `00`: adder
+- `01`: subtractor
+- `10`: set less-than
+- `11`: xor
 
 ```verilog
 module alu(input [9:0] SW, output [9:0] LED);
