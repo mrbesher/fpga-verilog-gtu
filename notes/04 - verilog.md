@@ -25,9 +25,9 @@ int main() {
 ```
 
 
-| ![The circuit diagram](assets/d04/example1_logism.png)  |
-| :------------------------------------------------------: |
-| <b>The Circuit Diagram with Three Adders</b> |
+| ![The circuit diagram](assets/d04/example1_logism.png) |
+| :----------------------------------------------------: |
+|      <b>The Circuit Diagram with Three Adders</b>      |
 
 > While the design above works fine with three adders this is not a good design as ALU units are expensive.
 
@@ -86,9 +86,9 @@ endmodule
 ```
 
 Here is a visualization of the synthesized design:
-| ![RTL View of the adder circuit](assets/d04/example1_add_fsm_rtl.png)  |
-| :------------------------------------------------------: |
-| <b>RTL Viewer</b> |
+| ![RTL View of the adder circuit](assets/d04/example1_add_fsm_rtl.png) |
+| :-------------------------------------------------------------------: |
+|                           <b>RTL Viewer</b>                           |
 
 
 #### Test Bench
